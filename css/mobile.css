@@ -1,0 +1,175 @@
+/* ------------- RESPONSIVE ------------- */
+/* handling phones and small screens */
+@media only screen and (max-width: 580px) {
+	.featherlight .featherlight-content {
+		/* dimensions: maximize lightbox with for small screens */
+		margin-left: 10px;
+		margin-right: 10px;
+		max-height: 98%;
+
+		padding: 10px 10px 0;
+		border-bottom: 10px solid transparent;
+	}
+}
+
+@media (max-width: 720px) {
+    table{
+        font-size: 12px;
+    }
+    
+}
+
+
+@media (max-width: 520px) {
+.wrap{
+	max-width: 100%;
+	margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+	border: 0px solid;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	overflow: hidden;
+    margin-top: 0px;
+    min-height: 5px;
+}
+    
+ th { 
+	display: none;
+}
+.invoice-list-header th {
+    display: table-cell;
+} 
+    body{
+        font: 12px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+        text-transform: inherit;
+        width: 100%;
+    }
+    h1{
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2.8em;
+        text-align: center;
+        margin: 25px 0;
+    }
+    h2{
+        font-size: 1.2em; 
+    }
+    
+
+.left-box{
+    border: 0px solid;
+    width: 100%;
+    float: none;
+    border: 1px solid #f0f0f0;
+    background: #f8f8f8;
+    padding-top: 10px;
+}
+
+.right-box{
+    border: 0px solid;
+    width: 100%;
+    margin-left: auto;
+    float: none;
+    padding-top: 10px;
+}
+    
+
+.feature-project-image {
+    max-height: 400px; 
+}
+
+.thumbnail {
+    height: 60px;
+}
+.thumbnail:hover {
+    height: 65px;
+}
+    
+    
+.thumbnail-div, .thumbnail-div-tall {
+    max-width: 100px;
+    height: 100px;
+}
+.thumbnail-div img, .thumbnail-div-tall img {
+    -o-transition:0s;
+    -ms-transition:0s;
+    -moz-transition:0s;
+    -webkit-transition:0s;
+}
+.thumbnail-div:hover, .thumbnail-div-tall:hover {
+    -o-transition:0s;
+    -ms-transition:0s;
+    -moz-transition:0s;
+    -webkit-transition:0s;
+}
+
+    
+    
+/* ------- HEADER ------- */
+    .customer-name-header {
+        font-size: 14px; 
+        font-weight: 600;
+        text-align: right;
+    }
+    .front-info {
+        padding-top: 50px;
+        float: none;
+    }
+    .account-status {
+        
+        text-align: center; 
+        width: 100%; 
+    }
+    .home-button {
+        display: none;
+    }
+    
+/* ------- LISTS ------- */
+    .list-large-screen {
+        display: none;
+    }
+    .list-small-screen {
+        display: inline;
+        text-align: center;
+    }
+    .list-break {	
+        display: block; 
+        text-align: center;
+        border: 0px solid;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
+    .list {	
+        display: table-cell;
+        margin-top: 10px;
+        height: 30px;
+        padding-top: 1.5%;
+        font-size: 14px;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: #f4f4f4;
+        border-radius: 4px;
+        border: 1px solid #d4d4d4;
+    }
+
+    .list-img-crop {
+        width: 40%;
+        display: inline-block;
+        height: 80px;
+    }
+    .due-date {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    .tab-links {
+        margin: 0 auto;
+    }
+    
+
+    
+}
+

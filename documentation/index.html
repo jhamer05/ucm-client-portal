@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>UCM Client Portal Documentation</title>
+	<link rel="stylesheet" href="doc_assets/style.css" type="text/css">
+
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+        
+        .bug_list td {
+            border-top: 1px solid #909090;
+            border-bottom: 1px solid #909090;
+        }
+        
+        
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	   
+		<h3 class="center alt">
+            <span style="font-weight: 500; font-size: 16px; color: #909090;"><i>
+            &ldquo;UCM Client Portal&rdquo; Documentation by &ldquo;JCH Design, LLC&rdquo;
+            </i></span>
+        </h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;UCM Client Portal&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Originaly Created: 11/11/2014<br>
+					Most Recent Update: 11/21/2015<br>
+					By: JCH Design, LLC<br>
+					Email: <a href="mailto:info@jchdesign.com">info@jchdesign.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you to anyone who purchased this project from me in the past or will donate anything for it in the future. This is a suplimental documentation for "UCM Client Portal" included with the software package. It contains basic instalation and usage instructions. 
+                    <BR><strong>
+            This project is now open source and available on GitHub free of charge. Donations are always welcome but not necessary. More information can be found at <a href="http://ucmcp.jchdesign.com.com">UCMCP.JCHDesign.com</a></strong>
+                    </p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+        
+		<table>
+            <tr>
+                <td style="width: 39%;">
+                    <h2 id="toc" class="alt">Table of Contents</h2>
+                    <ol class="alpha">
+                        <strong>Instalation Help</strong>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#usage">Usage</a></li>
+                        <li><a href="#credits">Sources &amp; Credits</a></li>
+                        <BR>
+                        <strong>Usefull Links</strong>
+                        <li><a href="http://ucmcp.jchdesign.com/">Information</a></li>
+                        <li><a href="http://github.com/jhamer05/">GitHub</a></li>
+                    </ol>
+                </td>
+                <td style="width: 60%;">
+                    <img src="doc_assets/images/SCP-img-1.jpg" width="100%" alt="config" />
+                </td>
+            </tr>
+        </table><BR>
+        <!--
+		<div style="text-align: center; margin: 0 auto; margin-top: -40px;">
+            <a href="http://samples.jchdesign.com/SCP-Demo/">
+            <div class='custom-button' style='width: 200px;'>
+                Check Out The Demo!
+            </div>
+            </a>
+        </div>-->
+		<BR>
+
+            
+            
+            
+<!-- ----------- Installation ----------- -->
+       <h3 id="installation"><strong>A.) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>REQUIREMENTS:<BR>
+            <a href="http://ultimateclientmanager.com/">Ultimate Client Manager</a> (UCM)<BR>
+            <a href="http://php.net/">PHP 5.4+</a> (5.5+ Recommended - Built and tested on 5.6)
+        </p>
+        
+        <p>1.) First make sure you have UCM installed. If you don't have UCM this system will not work. You can get UCM <a href="http://ultimateclientmanager.com/">Here.</a><BR>NOTE: Simple Client Portal was built and tested with 'UCM Pro'. Other versions may work but at this time it is recomended to use the 'Pro' version until further testing can be done.</p>  
+        
+        <p>2.) Once UCM is set up, extract the .zip file for UCM Client Portal and copy the contents to wherever you would like your installation to exist. (EG: www.example.com/clientportal/).</p>
+        
+        <p>3.)<BR>
+            <strong>Option 1: Installer</strong> 
+            <span style="color: #b60000;">(Improvements are planned for the installer)</span>
+            <li>Once you have the files extracted point your browser to the url and you'll be taken to an installer. You are presented with a directory list. The top item in the list will move you up a level and the other items are the folders inside the current directory. Move around until you find your UCM installation directory.
+            </li><BR>
+            <li>The text box will be filled in automatically and you can just press "Continue". This will copy the UCM config file and use it to populate the UCM Client Portal config file.
+            </li><BR>
+            <li>On the next screen you'll need to put in some extra information that will help UCM Client Portal with some things that are not in the UCM config, such as a site title. If you choose to set this up as a demo, you'll be taken to an extra page for demo login setup.
+            </li><BR>
+            <li>Thats it. On the final page just press the button to be taken to your new Client Portal.
+            </li><BR>
+            
+            <BR>
+            <strong>Option 2: Manual Installation</strong><BR>
+            Alternatively you can edit the "config/example.config.php" file in a text editor like <a href="http://notepad-plus-plus.org">Notepad++</a> and save it as "config.php". This is the file that tells the Client Portal how to label things and how to connect to the UCM database. <strong>Make sure the relevant settings such as 'DB_NAME' etc. match the settings from your UCM installation.</strong> Everything is labeled and should be prety self explanitory.</p>
+        
+        <p>UCM Configuration can be found in "(Your-UCM-Directory)/includes/config.php"</p>
+        
+		<!-- <div style="margin: 0 auto; width: 600px;">
+		<img src="documentation/doc_assets/images/config.jpg" width="100%" alt="config" />
+		</div> -->
+		<p>Thats all there is to it. Everything should connect to UCM and pull data from there.</p>
+
+        
+<!-- ----------- Usage ----------- -->
+		<hr>
+
+		<h3 id="usage"><strong>B.) Usage</strong> - <a href="#toc">top</a></h3>
+
+		<p>Simple Client Portal relies on UCM to work. At this time there the Admin Interface for UCM Client Portal is limited to customization so tasks such as creating new quotes or jobs should still be done in UCM. That said, the system is centered primarily around Graphic Design. UCM seems to be centered around Web Design. There are a few key diferences because of this.</p> 
+
+		<p>1.) Files are shown on project pages. If you have a file in UCM it needs to be linked with a job to show up in the Client Portal. It is set up this way so clients can see a simple layout with progression through past versions and they can see the current version right up front. It is meant to display an image. For now only browser compatible images will work.</p>  
+        
+        <p>2.) Project Comments are not tied to tasks. This is different from the way UCM works. Typically in UCM you'd have each task layed out with their own comments and seperate comments for files. In UCM Client Portal all comments are placed in the 'job_discussion' table but do not have a 'task_id' associated with them. This is because for a graphic designer the file is the job and tasks tend to center around those files. I wanted a way to see all project comments at once regaurdless of how many tasks there were and those comments need to be relevant to a file.</p>
+        
+        <p>3.) Emails are currently sent to a general inbox. This will change in the future and allow for the assigned staff member to recieve notifications. For now though, all notification messages will be sent to the address specified in the 'config.php' file. Emails from the quote page are already set up to send to the assigned staff member though.</p>
+
+       
+        
+        
+
+        
+<!-- ----------- Credits ----------- -->
+        <hr>
+		
+		<h3 id="credits"><strong>C.) Sources &amp; Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I used various pieces of open source code to help in the creation of this system. Below are links to the project websites.</p>
+        
+        <p><a href="http://noelboss.github.io/featherlight/">FeatherLight</a> - LightBox Pupups</p>
+        <p><a href="http://ascott1.github.io/bigSlide.js/">bigSlide</a> - Main Menu</p>
+        <p><a href="https://github.com/PHPMailer/PHPMailer/">PHPMailer</a> - Email System</p>
+        <p>I also recieved help from the all powerfull Google and the great communities that can be found with it.</p>
+        
+		<hr>
+        
+        
+<!-- ----------- End ----------- -->
+        <p>Once again, thank you so much if you purchased this system. As I said at the beginning, its open source, but I appreciate your contribution.<BR>
+        <span style="font-weight: 500; font-size: 16px; color: #909090;"><i>-Jim (JCH Design, LLC)</i></span></p>
+		
+        <div style="text-align: center; margin: 0 auto;">
+            <img src="doc_assets/images/SCP-img-2.jpg" width="400px" alt="config" />
+        </div>
+        <div style="text-align: center; margin: 0 auto;">Also if you're feeling generous, donations are always welcome in the form of bitcoin.<BR>1F4iLxNfZdGJkYieZ1raxPHRKDcp6o8sSi<br><img src="doc_assets/images/BTC.jpg" width="100px" alt="btc" /></div>
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
